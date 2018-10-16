@@ -8,18 +8,45 @@
 	<title>Мир чая</title>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
 
+<style>
+	body{padding: 1.5rem;}
+
+	p{padding: 1.5rem;}
+	
+	h2{text-align: center;}
+
+	
+
+</style>
 
 
 </head>
 <body>
-	<br>
 	
+<!-- Верхняя шапка с навигацией -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="color: #009900"><h1>Мир чая</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная / <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">История чая /</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Полезные свойства /</a>
+      </li>
+      </ul>
+  </div>
+</nav>
 	
-	<div style="color: #009900; padding-left:3rem" >
-			<h2>Мир чая</h2>
-		</div>		
-		
+			
 	<!-- Карусель -->
  <div class="container-fluid" style="background:#009900">
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -46,12 +73,93 @@
 
 		</div>
 
-			
-
-
-
-
+ <div class="container-fluid" style="background:#DAD8D8">
+ 	<br>
+ 	<div>
+ 	<h2>Чай - это очень особенный напиток. </h2>
+ 	<p class="lead text-left">Чаем также называется сам лист чайного куста, обработанный и подготовленный для приготовления напитка. Подготовка эта включает предварительную сушку (вяление), скручивание, более или менее длительное ферментативное окисление, окончательную сушку. Прочие операции вводятся в процесс только для производства отдельных видов и сортов чая. </p>
+ 	<p class="lead">Иногда слово «чай» используют и в качестве названия чайного куста — вида растений рода Камелия семейства Чайные; в ботанической научной литературе для этого вида обычно используется название камелия китайская (Camellia sinensis).</p>
 	</div>
+	<br>
+
+<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Интересные факты</button>
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Интересные факты</h4>
+				</div>	
+				
+				<div class="modal-body">
+					<p><b>1.</b> Чай – самый популярный напиток в мире, на втором месте по популярности оказалось пиво. Исключение составляет Англия и Ирландия, где пиво популярнее чая.</p>
+					<p><b>2.</b> Оказывается, что первая чашка чая была выпита совершенно случайно. Согласно китайской мифологии, в 2737 году до н. э. китайский император Шень-нун сидел под деревом, пока его слуга подавал ему горячую воду. Несколько листочков с дерева упали в воду, и император решил попробовать напиток. Выпив воды, он удивился его необычному аромату и вкусу и пожелал в дальнейшем употреблять только такой напиток. Дерево же было диким растением, известным как камелия китайская.</p>
+					<hr>
+					<button class="btn btn-success" data-dismiss="modal">Закрыть</button>
+					
+					</div>		
+				
+			</div>
+		</div> <br>
+</div>
+
+</div>
+
+<!-- Виды чая -->
+<div>
+	<br>
+	<h2>Виды чая</h2>
+</div>
+
+
+<!-- Контейнер с картинками видов чая -->
+<div class="container">
+	<hr>
+	<div class="row">
+		<div class="col-3">
+			<img src="img/allergiya-na-chernyj-chaj.jpg" alt="черный чай" class="img-thumbnail img-responsive">
+		</div>
+
+		<div class="col-9">
+			<p> <b>Чёрный чай</b> — вид чая, подвергающийся полной ферментации (окислению) в течение от двух недель до месяца (по традиционной технологии). Традиционно наиболее популярный вид чая в Европе. Вкус чёрного чая лишён горечи, настой имеет оранжевый или красный цвет. Чай обладает сложным действием, одновременно тонизирующим и успокаивающим. Подаётся обычно без добавок или с сахаром, лимоном, молоком или сливками, часто сопровождает десерт.  </p>
+		</div>
+</div> 
+
+
+<div class="container">
+	<hr>
+	<div class="row">
+		<div class="col-3">
+			<img src="img/green_tea.jpg" alt="зеленый чай" class="img-thumbnail img-responsive">
+		</div>
+
+		<div class="col-9">
+			<p> <b>Зелёный чай</b> — чай, подвергнутый минимальной ферментации (окислению). И зелёный, и чёрный чай получают из листьев одного и того же чайного куста, однако различными способами. Зелёный чай предварительно часто фиксируется паром температуры 170—180 °C; окисление продолжается не более двух дней, после чего обычно прекращается нагревом (традиционно в горшках, как принято в Китае, или под паром, как принято в Японии) или вообще не проводится. Чай оказывается окислен на 3—12 %.  </p>
+		</div>
+</div>
+
+		
+ 
+<div class="container">
+	<hr>
+	<div class="row">
+		<div class="col-3">
+			<img src="img/grass_tea.jpg" alt="зеленый чай" class="img-thumbnail img-responsive">
+		</div>
+
+		<div class="col-9">
+			<p> <b>Травяной, или цветочный чай, или фиточай</b> — напиток, получаемый при заваривании кипятком плодов, цветков, стеблей или корней растений, не содержащих кофеина.От классического травяного чая следует отличать чай для похудения, где с обычным зелёным чаем смешаны различные травяные добавки. Такой чай, как правило, обладает заметным мочегонным или слабительным эффектом. </p>
+		</div>
+</div>
+
+<footer>
+	<hr>
+	<p>&copy; все права защищены</p>
+</footer>
+	
+
+
+
+
 	
 
 
